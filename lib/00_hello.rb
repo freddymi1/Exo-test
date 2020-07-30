@@ -1,7 +1,7 @@
+def bonjour
+	puts "Bonjour!"
+end
 
-
-def hello  
-
-	return  "Bonjour tout le monde"
-
+def salut(name)
+	puts "Bonjour, #{name}!"
 end

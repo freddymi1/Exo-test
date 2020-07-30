@@ -1,11 +1,17 @@
-require_relative '../lib/00_hello.rb'
+require_relative '../lib/00_hello'
 
-describe "fonction dire bonjour" do  
+describe "fonction dire bonjour" do
+  it "dire bonjour" do
+    expect(bonjour).to eq("Bonjour!")
+  end
+end
 
-	it "dire bonjour" do    
+describe "fonction salut" do
+  it "dire bonjour a quelqu'un" do
+    expect(salut("Michel")).to eq("Bonjour, Michel!")
+  end
 
-		expect(hello).to eq("Bonjour tout le monde")  
-
-	end
-
+  it "dit bonjour à quelqu'un d'autre" do
+    expect(salut("Freddy")).to eq("Bonjour, Freddy!")
+  end
 end
